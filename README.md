@@ -28,6 +28,20 @@ sorted(d.items(),key=lambda x:x[1])
 ```python
 print("aStr"[::-1])
 ```
+
+#### 8.将字符串 "k:1 |k1:2|k2:3|k3:4"，处理成字典 {k:1,k1:2,...}
+```python
+str1 = "k:1|k1:2|k2:3|k3:4"
+def str2dict(str1):
+    result = {}
+    for item in str1.split("|"):
+        key, value = item.split(":",1)
+        dict[key] = a[value]
+    return result
+
+#字典推导式
+d = {k:int(v) for t in str1.split("|") for k, v in (t.split(":"), )}
+```
 ## Acknowledgments
 
 Questions from:
