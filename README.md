@@ -20,6 +20,14 @@ for s_child in os.listdir(s_path):
   
 ```
 
+#### 5. 现有字典 d= {'a':24,'g':52,'i':12,'k':33}请按value值进行排序?
+```python
+sorted(d.items(),key=lambda x:x[1])
+```
+#### 7.请反转字符串 "aStr"?
+```python
+print("aStr"[::-1])
+```
 ## Acknowledgments
 
 Questions from:
