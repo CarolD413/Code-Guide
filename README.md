@@ -1,7 +1,7 @@
 # Python Questions with Detailed Comments and Notes
 
 #### 2. 子文件路径
-```
+```python
 def print_directory_contents(sPath):
 """
 Given the path of a directory, 
