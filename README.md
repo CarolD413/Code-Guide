@@ -1,6 +1,6 @@
 # Python Questions with Detailed Comments and Notes
 
-#### 2. 子文件路径
+#### 1. 子文件路径
 ```python
 def print_directory_contents(sPath):
 """
@@ -20,16 +20,16 @@ for s_child in os.listdir(s_path):
   
 ```
 
-#### 5. 现有字典 d= {'a':24,'g':52,'i':12,'k':33}请按value值进行排序?
+#### 2. 现有字典 d= {'a':24,'g':52,'i':12,'k':33}请按value值进行排序?
 ```python
 sorted(d.items(),key=lambda x:x[1])
 ```
-#### 7.请反转字符串 "aStr"?
+#### 3.请反转字符串 "aStr"?
 ```python
 print("aStr"[::-1])
 ```
 
-#### 8.将字符串 "k:1 |k1:2|k2:3|k3:4"，处理成字典 {k:1,k1:2,...}
+#### 4.将字符串 "k:1 |k1:2|k2:3|k3:4"，处理成字典 {k:1,k1:2,...}
 ```python
 str1 = "k:1|k1:2|k2:3|k3:4"
 def str2dict(str1):
@@ -42,7 +42,26 @@ def str2dict(str1):
 #字典推导式
 d = {k:int(v) for t in str1.split("|") for k, v in (t.split(":"), )}
 ```
+
+#### 5. 
+Write a program which will find all such numbers which are divisible by 7 but are not a multiple of 5,
+between 2000 and 3200 (both included).
+The numbers obtained should be printed in a comma-separated sequence on a single line.
+
+**Hints:** 
+Consider use range(#begin, #end) method
+```python
+lst = []
+for in range(2000,3201):
+    if i%7 == 0 and i%5 != 0:
+        lst.append(i)
+print(",".join(lst))
+```
+
+
+
 ## Acknowledgments
 
 Questions from:
 * https://github.com/kenwoodjw/python_interview_question#python%E5%9F%BA%E7%A1%80
+* https://github.com/zhiwehu/Python-programming-exercises/blob/master/100%2B%20Python%20challenging%20programming%20exercises.txt
